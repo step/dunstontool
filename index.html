@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="source.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div class="container">
+    <div>
+      <div>
+        <label for="sourcecode">Old source Code</label>
+      </div>
+
+      <textarea name="foo" id="sourcecode" cols="30" rows="20" oninput="foobar()"></textarea>
+      <div>
+        <div>
+          <label for="oldline">old line number</label>
+
+        </div>
+        <input id="oldline" type="number" value="10" min="10" onchange="foobar()"> </div>
+
+    </div>
+
+    <div>
+      <div>
+        <label for="output">New source code</label></div>
+      <textarea name="output" readonly="true" id="output" cols="30" rows="20"></textarea>
+            <div>
+        <div>
+          <label for="newline">new line number</label></div>
+        <input id="newline" type="number" value="20" min="20" onchange="foobar()"></div>
+
+    </div>
+    
+  </div>
+
+</body>
+
+  
+</html>
